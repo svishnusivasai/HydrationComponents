@@ -254,7 +254,7 @@ function Extract_ZipFile
         return 1
     fi
     Trace "Hello2"
-    Trace "Unzip successful"
+    # Trace "Unzip successful"
     return 0
 }
 
