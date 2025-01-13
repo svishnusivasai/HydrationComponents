@@ -237,7 +237,8 @@ function Extract_ZipFile
         Trace_Error "Extract_ZipFile Invalid argument. target-directory path is empty"
         return 1
     fi
-    
+
+    Trace "Hello1"
     Trace "Extracting $1 to $2"
     
     if [[ -f $UNZIP_CMD ]]; then    
@@ -252,7 +253,7 @@ function Extract_ZipFile
         Trace_Error "Error extracting $1 to $2"
         return 1
     fi
-    
+    Trace "Hello2"
     Trace "Unzip successful"
     return 0
 }
