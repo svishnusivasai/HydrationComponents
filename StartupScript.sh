@@ -57,8 +57,10 @@ _HOST_ID_=""
 _SCENARIO_=""
 _SCENARIO_RECOVERY_="recovery"
 _SCENARIO_MIGRATION_="migration"
-_SCENARIO_RECOVERY_TEST_="testrecovery"
-_SCENARIO_MIGRATION_TEST_="testmigration"
+_SCENARIO_RECOVERY_TEST_="recoverytest";
+_SCENARIO_MIGRATION_TEST_="migrationtest";
+
+export _ENABLE_LINUX_GA_CONFIG_="EnableLinuxGAInstallation:true"
 
 #
 # Trace functions to log the trace messages to log file.
@@ -237,8 +239,7 @@ function Extract_ZipFile
         Trace_Error "Extract_ZipFile Invalid argument. target-directory path is empty"
         return 1
     fi
-
-    Trace "Hello1"
+    
     Trace "Extracting $1 to $2"
     
     if [[ -f $UNZIP_CMD ]]; then    
@@ -253,7 +254,7 @@ function Extract_ZipFile
         Trace_Error "Error extracting $1 to $2"
         return 1
     fi
-    Trace "Hello2"
+    
     Trace "Unzip successful"
     return 0
 }
