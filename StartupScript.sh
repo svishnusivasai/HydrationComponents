@@ -58,7 +58,7 @@ _SCENARIO_=""
 _SCENARIO_RECOVERY_="recovery"
 _SCENARIO_MIGRATION_="migration"
 _SCENARIO_RECOVERY_TEST_="testrecovery"
-_SCENARIO_MIGRATION_TEST_= "testmigration"
+_SCENARIO_MIGRATION_TEST_="testmigration"
 
 #
 # Trace functions to log the trace messages to log file.
